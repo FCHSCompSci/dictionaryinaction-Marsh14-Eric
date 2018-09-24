@@ -4,7 +4,7 @@ off = {
    'RB' : '',
    'WR_1': '',
    'WR_2': '',
-   'WR-3': '',
+   'WR_3': '',
    'TE_1': '',
    'LT': '',
    'LG': '',
@@ -45,22 +45,26 @@ while True:
         updatePO = input("What postion would you like to change the player playing? ")
         updatePA = input("What player would you like to put in that positon? ")
         updateoff(updatePO, updatePA)
-        print("This is now your team: " + printdict(off) + "\n" )
+        print("This is now your team: ")
+        printdict(off)
 
     elif cmd == "c":
         createPO = input("What postion would you like to create, \n "
                           "remember to type '' around that postion. ")
         createPA = input("What player would you like to put in that postion? ")
         updateoff(createPO, createPA)
-        print("This is now your team: " + printdict(off) + "\n" )
+        print("This is now your team: ")
+        printdict(off)
 
     elif cmd == "d":
             deletePO = input("What postion would you like to delete? ")
             map(off.pop, [deletePO])
-            print("This is now your team: " + printdict(off) + "\n" )
+            print("This is now your team: ")
+            printdict(off
 
     elif cmd == "e":
-        print("Here is your final team: " + printdict(off) + "\n" )
+        print("Here is your final team: ")
+        printdict(off)
         print("Thanks for making an offensive line up %s!" %name)
         break
 
